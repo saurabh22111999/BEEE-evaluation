@@ -1,0 +1,36 @@
+void setup() {
+  for(int i=2;i<8;i++)
+  
+  {pinMode(i, OUTPUT);
+  }
+   pinMode(12, INPUT);
+  pinMode(13, INPUT);
+  
+}
+void  ledon()
+{for(int i=2;i<8;i++)
+{digitalWrite(i,HIGH);
+                                  }}
+void  ledoff()
+{for(int i=2;i<8;i++)
+{digitalWrite(i,LOW);}}
+  void loop() {
+  
+int  c= AnalogRead(A0);
+
+ 
+  if (c>900 ) {if (digitalRead(13== HIGH))
+    ledon();
+               delay(500);
+               ledoff();
+               delay(500);
+              
+  } else 
+    
+    digitalRead(12==HIGH);
+    ledon();
+    delay(1000);
+    ledoff();
+    delay(1000);
+  }
+}
